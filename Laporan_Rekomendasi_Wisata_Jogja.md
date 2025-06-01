@@ -80,7 +80,7 @@ Contoh Output: Top-10 wisata mirip Candi Borobudur.
 - Melatih model selama 20 epoch, dengan fungsi loss `MSE`.
 
 **Hasil Evaluasi**:
-- **MAE (Mean Absolute Error)**: 1.2559
+- **MAE (Mean Absolute Error)**: 1.2625
 
 ### Kelebihan & Kekurangan
 
