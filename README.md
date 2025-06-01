@@ -6,17 +6,6 @@ Repositori ini berisi proyek machine learning untuk membangun **sistem rekomenda
 1. **Content-Based Filtering** (TF-IDF + Cosine Similarity)
 2. **Collaborative Filtering** (Deep Learning)
 
-## 📊 Dataset
-Data yang digunakan berasal dari [Kaggle - Tourism Rating Dataset](https://www.kaggle.com/datasets/ardhiraka/tourism-rating), terdiri dari:
-- Informasi tempat wisata (`tourism_jogja.csv`)
-- Data rating pengguna (`tourism_rating.csv`)
-- Data pengguna (`user.csv`)
-
-## 📁 Struktur Proyek
-- `Rekomendasi_Jogja.ipynb` - Notebook utama berisi pipeline lengkap dari EDA hingga evaluasi model.
-- `rekomendasi_jogja.py` - Versi script Python dari proyek.
-- `Laporan_Rekomendasi_Wisata_Jogja.md` - Laporan proyek dalam format Markdown.
-
 ## 🚀 Cara Menjalankan
 1. Clone repositori ini.
 2. Jalankan `Rekomendasi_Jogja.ipynb` di Google Colab.
