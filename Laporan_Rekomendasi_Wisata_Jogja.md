@@ -1,5 +1,8 @@
-
 # Sistem Rekomendasi Wisata Jogja
+- Author: Faris Nur Rizqiawan
+- Platform: Dicoding Submission – Proyek Akhir Machine Learning Terapan
+- Domain: Lingkungan
+- Metode: Collaborative Filtering (Deep Learning) dan Content-Based Filtering (TF-IDF)
 
 ## 1. Project Overview (Ulasan Proyek)
 
