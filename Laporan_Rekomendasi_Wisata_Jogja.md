@@ -11,6 +11,7 @@ Proyek ini menggunakan dua pendekatan:
 
 **Referensi**:
 - Suhailah, Eva, & Hartatik. (2023). Pembuatan sistem rekomendasi pariwisata Yogyakarta menggunakan Triangle Multiplying Jaccard. Jurnal Automation Computer Information System. [Jurnal](https://jacis.pubmedia.id/index.php/jacis/article/view/62/50)
+- Nugroho, R.A. et al. (2020). Tourism Site Recommender System Using Item-Based Collaborative Filtering Approach. [Jurnal](https://repository.usd.ac.id/39342/1/6887_Tourism+Site+Recommender+System+Using+Item-Based+Collaborative+Filtering+Approach.pdf)
 - Data bersumber dari [Kaggle](https://www.kaggle.com/datasets/farisrizqiawan/dataset-rekomendasi-wisata-jogja).
 
 ## 2. Business Understanding
@@ -36,7 +37,7 @@ Proyek ini menggunakan dua pendekatan:
 - `tourism_rating.csv`: 9800 rating pengguna.
 - `user.csv`: 312 pengguna.
 
-🔗 Link data: [Kaggle Tourism Rating Dataset](https://www.kaggle.com/datasets/ardhiraka/tourism-rating)
+🔗 Link data: [Kaggle Tourism Rating Dataset](https://www.kaggle.com/datasets/farisrizqiawan/dataset-rekomendasi-wisata-jogja)
 
 ### Deskripsi Fitur
 - **tourism_jogja.csv**: `place_id`, `name`, `description`, `category`, `type`, `rating`, `latitude`, `longitude`, `htm`.
@@ -90,9 +91,10 @@ Contoh Output: Top-10 wisata mirip Candi Borobudur.
 ### Metrik Evaluasi
 - **Mean Absolute Error (MAE)** digunakan untuk mengukur kinerja prediksi rating.
 - Formula:
-  ```
-  MAE = (1/n) * Σ |y_i - ŷ_i|
-  ```
+
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
+$$
 
 ### Hasil Evaluasi
 - Model collaborative filtering mencapai MAE **1.2559**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
