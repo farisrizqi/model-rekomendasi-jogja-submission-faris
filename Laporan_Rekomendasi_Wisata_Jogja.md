@@ -245,13 +245,17 @@ $$
 ### Hasil Evaluasi
 - Model collaborative filtering mencapai MAE **1.2559**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
 
-### Visualisasi Evaluasi
+### Visualisasi
+![Visualisasi Training](asset/visualisasi-training.png)
 
 
 ## 7. Kesimpulan
 
 - Proyek berhasil membangun dua jenis sistem rekomendasi:
-  - **Content-Based Filtering** berbasis deskripsi tempat.
-  - **Collaborative Filtering** berbasis deep learning.
+   1. **Content-Based Filtering:** Model Content-Based Filtering berhasil dibangun untuk merekomendasikan tempat wisata Jogja berdasarkan kemiripan deskripsi.
+   2. **Collaborative Filtering:** Model Collaborative Filtering dilatih dan dievaluasi. Evaluasi model menunjukkan kinerja yang baik dengan nilai MAE sebesar 1.2625, membuktikan efektivitasnya dalam menangkap preferensi user.
 - Hasil rekomendasi sesuai dan relevan dengan tujuan awal proyek.
 - Sistem dapat diperluas ke konteks wisata daerah lain atau ditambahkan fitur seperti ulasan pengguna.
+
+Berdasarkan kedua model tersebut, rekomendasi wisata Jogja dapat dihasilkan, menampilkan nama tempat, tipe, rating, HTM, dan deskripsi untuk membantu user dalam memilih destinasi.
+
