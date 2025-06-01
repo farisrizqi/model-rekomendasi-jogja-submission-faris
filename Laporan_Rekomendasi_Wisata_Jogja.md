@@ -169,6 +169,7 @@ Model ini menggunakan pendekatan Content-Based Filtering untuk merekomendasikan 
    | 9  | Perwara Temple    | Budaya Dan Sejarah | 4.4    | 50.000   | candi candi pendamping di kompleks prambanan y... |
    | 10 | Candi Abang       | Budaya Dan Sejarah | 4.2    | 5.000    | candi abang memiliki bentuk seperti piramida d... |
 
+<br>
 
 ### Collaborative Filtering
 
