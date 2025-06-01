@@ -10,8 +10,8 @@ Proyek ini menggunakan dua pendekatan:
 - **Collaborative Filtering** menggunakan deep learning.
 
 **Referensi**:
-- Ricci, F., Rokach, L., & Shapira, B. (2015). *Recommender Systems Handbook*.
-- Data bersumber dari [Kaggle](https://www.kaggle.com/datasets/ardhiraka/tourism-rating).
+- Suhailah, Eva, & Hartatik. (2023). Pembuatan sistem rekomendasi pariwisata Yogyakarta menggunakan Triangle Multiplying Jaccard. Jurnal Automation Computer Information System. [Jurnal](https://jacis.pubmedia.id/index.php/jacis/article/view/62/50)
+- Data bersumber dari [Kaggle](https://www.kaggle.com/datasets/farisrizqiawan/dataset-rekomendasi-wisata-jogja).
 
 ## 2. Business Understanding
 
