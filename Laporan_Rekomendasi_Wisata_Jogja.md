@@ -156,18 +156,19 @@ Model ini menggunakan pendekatan Content-Based Filtering untuk merekomendasikan 
 
 #### 3. Berikut Output: Top-10 wisata mirip Candi Borobudur.
 
-   | No | Nama Tempat       | Tipe               | Rating | HTM (Rp) | Deskripsi Singkat                                 |
-   | -- | ----------------- | ------------------ | ------ | -------- | ------------------------------------------------- |
-   | 1  | Candi Sari        | Budaya Dan Sejarah | 4.5    | 2.000    | candi sari juga disebut candi bendah adalah ca... |
-   | 2  | Candi Banyunibo   | Budaya Dan Sejarah | 4.5    | 5.000    | candi banyunibo adalah candi buddha yang berad... |
-   | 3  | Candi Kalasan     | Budaya Dan Sejarah | 4.5    | 5.000    | candi kalasan adalah candi yang dipersembahkan... |
-   | 4  | Candi Sewu        | Budaya Dan Sejarah | 4.6    | 10.000   | candi sewu adalah candi buddha yang dibangun p... |
-   | 5  | Candi Sojiwan     | Budaya Dan Sejarah | 4.5    | 5.000    | candi sojiwan memiliki keunikan keunikan ini b... |
-   | 6  | Candi Plaosan     | Budaya Dan Sejarah | 4.6    | 3.000    | candi plaosan terletak di desa bugisan kecamat... |
-   | 7  | Candi Plaosan Lor | Budaya Dan Sejarah | 4.2    | 3.000    | kompleks candi buddha yang megah dengan arsite... |
-   | 8  | Candi Ijo         | Budaya Dan Sejarah | 4.7    | 10.000   | candi ijo adalah sebuah kompleks percandian be... |
-   | 9  | Perwara Temple    | Budaya Dan Sejarah | 4.4    | 50.000   | candi candi pendamping di kompleks prambanan y... |
-   | 10 | Candi Abang       | Budaya Dan Sejarah | 4.2    | 5.000    | candi abang memiliki bentuk seperti piramida d... |
+   | No | Name              | Type               | Rating | HTM   | Description                                       | Similarity Score |
+   | -- | ----------------- | ------------------ | ------ | ----- | ------------------------------------------------- | ---------------- |
+   | 0  | Candi Sari        | Budaya Dan Sejarah | 4.5    | 2000  | candi sari juga disebut candi bendah adalah ca... | 0.441915         |
+   | 1  | Candi Banyunibo   | Budaya Dan Sejarah | 4.5    | 5000  | candi banyunibo adalah candi buddha yang berad... | 0.376586         |
+   | 2  | Candi Kalasan     | Budaya Dan Sejarah | 4.5    | 5000  | candi kalasan adalah candi yang dipersembahkan... | 0.371083         |
+   | 3  | Candi Sewu        | Budaya Dan Sejarah | 4.6    | 10000 | candi sewu adalah candi buddha yang dibangun p... | 0.349796         |
+   | 4  | Candi Sojiwan     | Budaya Dan Sejarah | 4.5    | 5000  | candi sojiwan memiliki keunikan keunikan ini b... | 0.309321         |
+   | 5  | Candi Plaosan     | Budaya Dan Sejarah | 4.6    | 3000  | candi plaosan terletak di desa bugisan kecamat... | 0.285919         |
+   | 6  | Candi Plaosan Lor | Budaya Dan Sejarah | 4.2    | 3000  | kompleks candi buddha yang megah dengan arsite... | 0.282975         |
+   | 7  | Candi Ijo         | Budaya Dan Sejarah | 4.7    | 10000 | candi ijo adalah sebuah kompleks percandian be... | 0.277596         |
+   | 8  | Perwara Temple    | Budaya Dan Sejarah | 4.4    | 50000 | candi candi pendamping di kompleks prambanan y... | 0.260930         |
+   | 9  | Candi Abang       | Budaya Dan Sejarah | 4.2    | 5000  | candi abang memiliki bentuk seperti piramida d... | 0.240907         |
+
 
 <br>
 
@@ -244,19 +245,29 @@ $$
 $$
 
 ### Hasil Evaluasi
-- Model collaborative filtering mencapai MAE **1.2559**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
+1. Model Content-Based Filtering
+   - **Precision@5 = 0.7483**: sekitar 74.83% merupakan tempat wisata yang relevan dengan query.
+   - **Recall@5 = 0.7839**: berhasil merekomendasikan sekitar 78.39% dari seluruh tempat wisata yang relevan.
+   - **NDCG@5 = 0.9991**: Nilai sangat tinggi menunjukkan bahwa sistem tidak hanya merekomendasikan tempat yang relevan, tetapi juga menempatkannya dalam urutan yang sangat baik sesuai relevansi.
+  
+##### Visualisasi CBF
 
-### Visualisasi
+
+2. Model Collaborative Filtering mencapai MAE **1.2559**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
+
+##### Visualisasi CF
 ![Visualisasi Training](asset/visualisasi-training.png)
 
 
 ## 7. Kesimpulan
 
-- Proyek berhasil membangun dua jenis sistem rekomendasi:
-   1. **Content-Based Filtering:** Model Content-Based Filtering berhasil dibangun untuk merekomendasikan tempat wisata Jogja berdasarkan kemiripan deskripsi.
-   2. **Collaborative Filtering:** Model Collaborative Filtering dilatih dan dievaluasi. Evaluasi model menunjukkan kinerja yang baik dengan nilai MAE sebesar 1.2625, membuktikan efektivitasnya dalam menangkap preferensi user.
-- Hasil rekomendasi sesuai dan relevan dengan tujuan awal proyek.
-- Sistem dapat diperluas ke konteks wisata daerah lain atau ditambahkan fitur seperti ulasan pengguna.
+Proyek berhasil membangun dua jenis sistem rekomendasi:
+1. **Content-Based Filtering:** Model Content-Based Filtering telah berhasil dibangun untuk merekomendasikan tempat wisata di Jogja berdasarkan kemiripan deskripsi. Evaluasi global performa model menunjukkan hasil yang baik, di mana dari 5 rekomendasi teratas.
+   <br><br>Proporsi item yang relevan mencapai 0.7483 (Precision@5). Kemampuan model dalam menemukan item relevan dari total item relevan yang tersedia mencapai 0.7839 (Recall@5), serta kualitas urutan rekomendasi (NDCG@5) sebesar 0.9991.
+2. **Collaborative Filtering:** Model Collaborative Filtering dilatih dan dievaluasi. Evaluasi model menunjukkan kinerja yang baik dengan nilai MAE sebesar 1.2710, membuktikan efektivitasnya dalam menangkap preferensi user.efektivitasnya dalam menangkap preferensi user.
+  
+   - Hasil rekomendasi sesuai dan relevan dengan tujuan awal proyek.
+   - Sistem dapat diperluas ke konteks wisata daerah lain atau ditambahkan fitur seperti ulasan pengguna.
 
 Berdasarkan kedua model tersebut, rekomendasi wisata Jogja dapat dihasilkan, menampilkan nama tempat, tipe, rating, HTM, dan deskripsi untuk membantu user dalam memilih destinasi.
 
