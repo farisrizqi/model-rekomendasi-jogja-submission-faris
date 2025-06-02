@@ -622,7 +622,7 @@ recommend_top_n(user_id=1, n=10)
 Proyek berhasil membangun dua jenis sistem rekomendasi:
 1. **Content-Based Filtering:** Model Content-Based Filtering telah berhasil dibangun untuk merekomendasikan tempat wisata di Jogja berdasarkan kemiripan deskripsi. Evaluasi global performa model menunjukkan hasil yang baik.
    <br>Proporsi item yang relevan mencapai 0.7483 (Precision@5). Kemampuan model dalam menemukan item relevan dari total item relevan yang tersedia mencapai 0.7839 (Recall@5), serta kualitas urutan rekomendasi (NDCG@5) sebesar 0.9991. <br><br>
-2. **Collaborative Filtering:** Model Collaborative Filtering dilatih dan dievaluasi. Evaluasi model menunjukkan kinerja yang baik dengan nilai MAE sebesar 1.2710, membuktikan efektivitasnya dalam menangkap preferensi user.efektivitasnya dalam menangkap preferensi user.
+2. **Collaborative Filtering:** Model Collaborative Filtering dilatih dan dievaluasi. Evaluasi model menunjukkan kinerja yang baik dengan nilai MAE sebesar 1.2413, membuktikan efektivitasnya dalam menangkap preferensi user.efektivitasnya dalam menangkap preferensi user.
   
    - Hasil rekomendasi sesuai dan relevan dengan tujuan awal proyek.
    - Sistem dapat diperluas ke konteks wisata daerah lain atau ditambahkan fitur seperti ulasan pengguna.
