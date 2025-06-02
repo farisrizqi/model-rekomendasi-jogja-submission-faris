@@ -209,18 +209,19 @@ Output model adalah prediksi rating yang diharapkan oleh user terhadap tempat wi
 - Tampilkan top-N rekomendasi berdasarkan prediksi rating tertinggi `recommend_top_n(user_id=1, n=10)`.
 
 #### 4. Berikut Output: Top-10 Wisata Jogja
-| Name                                              | Type               | Rating | HTM    | Description                                       |
-| ------------------------------------------------- | ------------------ | ------ | ------ | ------------------------------------------------- |
-| Candi Sumberwatu                                  | Budaya Dan Sejarah | 3.3    | 0      | Situs candi kecil yang menawarkan panorama ala... |
-| The Palace of Yogyakarta (Keraton Yogyakarta)     | Budaya Dan Sejarah | 4.6    | 8000   | Kompleks keraton merupakan museum yang menyimp... |
-| Taman Lampion Candi Plaosan                       | Budaya Dan Sejarah | 4.4    | 5000   | Taman indah yang dipenuhi lampion warna warni...  |
-| Bukit white stone                                 | Alam               | 5.0    | 15000  | Bukit dengan formasi batu kapur putih yang uni... |
-| Goa Branjang                                      | Alam               | 4.1    | 5000   | Gua alami yang eksotis dengan suasana hening c... |
-| Tourism Village Pandeyan                          | Agrowisata         | 4.6    | 0      | Desa wisata di Yogyakarta yang menampilkan kek... |
-| TemenNyantai TransWisata                          | Agrowisata         | 4.6    | 5000   | Layanan wisata santai dengan berbagai paket me... |
-| Guide Francophone et Chauffeur de Voiture Priv... | Budaya Dan Sejarah | 5.0    | 11500  | Layanan pemandu wisata dan sopir pribadi berba... |
-| Gardu Pandang Merapi                              | Alam               | 4.3    | 5000   | Tempat terbaik untuk menikmati pemandangan gun... |
-| Lava Tour Merapi                                  | Alam               | 4.8    | 350000 | Wisata jeep menyusuri jalur bekas letusan mera... |
+   | No | Nama Tempat                              | Tipe                | Rating | HTM   | Deskripsi                                                                 |
+   |----|------------------------------------------|---------------------|--------|-------|---------------------------------------------------------------------------|
+   | 0  | The Palace of Yogyakarta (Keraton Yogyakarta) | Budaya Dan Sejarah  | 4.6    | 8000  | Kompleks keraton merupakan museum yang menyimpan sejarah dan budaya.     |
+   | 1  | Pantai Pok Tunggal                       | Pantai              | 4.5    | 10000 | Pantai Pok Tunggal adalah salah satu pantai populer dengan pemandangan.  |
+   | 2  | Series Mahogany Village Nampurejo       | Agrowisata          | 4.4    | 0     | Kompleks wisata alam dan edukasi di tengah hutan.                        |
+   | 3  | TWM (Tebing Watu Mabur)                 | Alam                | 4.4    | 2000  | Tebing Watu Mabur adalah destinasi wisata alam dengan pemandangan.       |
+   | 4  | Candi Abang                             | Budaya Dan Sejarah  | 4.2    | 5000  | Candi Abang memiliki bentuk seperti piramida dan berwarna merah.         |
+   | 5  | Pasar Kembang                            | Desa Wisata         | 4.2    | 0     | Jalan Pasar Kembang merupakan gang kecil yang dikenal akan keunikannya. |
+   | 6  | Lapangan Reklamasi Ngentak              | Agrowisata          | 5.0    | 0     | Tempat ibadah yang disediakan bagi pengunjung di area reklamasi.         |
+   | 7  | Kalinampu Natural Park                  | Buatan              | 4.2    | 5000  | Taman alam di Bantul yang menawarkan pemandangan indah.                  |
+   | 8  | Bukit White Stone                       | Alam                | 5.0    | 15000 | Bukit dengan formasi batu kapur putih yang unik dan menarik.             |
+   | 9  | Ratu Boko                               | Budaya Dan Sejarah  | 4.6    | 40000 | Istana Ratu Boko adalah sebuah bangunan megah peninggalan sejarah.       |
+
 
 ### Kelebihan & Kekurangan
 
