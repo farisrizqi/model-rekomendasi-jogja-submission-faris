@@ -4,7 +4,7 @@
 - Domain: Lingkungan
 - Metode: Collaborative Filtering (Deep Learning) dan Content-Based Filtering (TF-IDF)
 
-## 1. Project Overview (Ulasan Proyek)
+## **1. Project Overview (Ulasan Proyek)**
 
 Pariwisata merupakan sektor penting yang mendukung perekonomian dan identitas budaya suatu daerah. Di Daerah Istimewa Yogyakarta, keberagaman objek wisata menjadikannya salah satu tujuan utama wisatawan domestik maupun mancanegara. Namun, dengan banyaknya pilihan tempat wisata, pengguna sering kali kesulitan dalam menentukan tempat mana yang sesuai dengan preferensi dan kebutuhan mereka.
 
@@ -38,7 +38,7 @@ Oleh karena itu, proyek ini bertujuan membangun Sistem Rekomendasi Tempat Wisata
    - Menggunakan neural network untuk mempelajari preferensi pengguna berdasarkan interaksi rating.
    - Memprediksi rating untuk user tertentu terhadap objek wisata berdasarkan perilaku pengguna lain.
 
-## 3. Data Understanding
+## **3. Data Understanding**
 
 ### Sumber dan Jumlah Dataset
 - `tourism_jogja.csv`: 437 tempat wisata Yogyakarta.
@@ -114,7 +114,7 @@ Oleh karena itu, proyek ini bertujuan membangun Sistem Rekomendasi Tempat Wisata
    Grafik diatas memaparkan demografi pengguna wisata yang meliputi usia dan keberadaan asal pengguna. Informasi ini berguna untuk menyesuaikan sistem rekomendasi agar lebih relevan terhadap kelompok demografi utama yang menggunakan aplikasi.
 
 
-## 4. Data Preparation
+## **4. Data Preparation**
 
 ### Langkah yang Dilakukan
 1. **Content-Based Filtering**:
@@ -129,7 +129,7 @@ Oleh karena itu, proyek ini bertujuan membangun Sistem Rekomendasi Tempat Wisata
 - TF-IDF butuh teks bersih untuk menghasilkan representasi yang akurat.
 - Label encoding diperlukan karena model deep learning hanya menerima input numerik.
 
-## 5. Modeling and Results
+## **5. Modeling and Results**
 
 ### Content-Based Filtering
 
@@ -156,18 +156,18 @@ Model ini menggunakan pendekatan Content-Based Filtering untuk merekomendasikan 
 
 #### 3. Berikut Output: Top-10 wisata mirip Candi Borobudur.
 
-   | No | Name              | Type               | Rating | HTM   | Description                                       | Similarity Score |
-   | -- | ----------------- | ------------------ | ------ | ----- | ------------------------------------------------- | ---------------- |
-   | 0  | Candi Sari        | Budaya Dan Sejarah | 4.5    | 2000  | candi sari juga disebut candi bendah adalah ca... | 0.441915         |
-   | 1  | Candi Banyunibo   | Budaya Dan Sejarah | 4.5    | 5000  | candi banyunibo adalah candi buddha yang berad... | 0.376586         |
-   | 2  | Candi Kalasan     | Budaya Dan Sejarah | 4.5    | 5000  | candi kalasan adalah candi yang dipersembahkan... | 0.371083         |
-   | 3  | Candi Sewu        | Budaya Dan Sejarah | 4.6    | 10000 | candi sewu adalah candi buddha yang dibangun p... | 0.349796         |
-   | 4  | Candi Sojiwan     | Budaya Dan Sejarah | 4.5    | 5000  | candi sojiwan memiliki keunikan keunikan ini b... | 0.309321         |
-   | 5  | Candi Plaosan     | Budaya Dan Sejarah | 4.6    | 3000  | candi plaosan terletak di desa bugisan kecamat... | 0.285919         |
-   | 6  | Candi Plaosan Lor | Budaya Dan Sejarah | 4.2    | 3000  | kompleks candi buddha yang megah dengan arsite... | 0.282975         |
-   | 7  | Candi Ijo         | Budaya Dan Sejarah | 4.7    | 10000 | candi ijo adalah sebuah kompleks percandian be... | 0.277596         |
-   | 8  | Perwara Temple    | Budaya Dan Sejarah | 4.4    | 50000 | candi candi pendamping di kompleks prambanan y... | 0.260930         |
-   | 9  | Candi Abang       | Budaya Dan Sejarah | 4.2    | 5000  | candi abang memiliki bentuk seperti piramida d... | 0.240907         |
+   | Name              | Type               | Rating | HTM   | Description                                       | Similarity Score |
+   | ----------------- | ------------------ | ------ | ----- | ------------------------------------------------- | ---------------- |
+   | Candi Sari        | Budaya Dan Sejarah | 4.5    | 2000  | candi sari juga disebut candi bendah adalah ca... | 0.441915         |
+   | Candi Banyunibo   | Budaya Dan Sejarah | 4.5    | 5000  | candi banyunibo adalah candi buddha yang berad... | 0.376586         |
+   | Candi Kalasan     | Budaya Dan Sejarah | 4.5    | 5000  | candi kalasan adalah candi yang dipersembahkan... | 0.371083         |
+   | Candi Sewu        | Budaya Dan Sejarah | 4.6    | 10000 | candi sewu adalah candi buddha yang dibangun p... | 0.349796         |
+   | Candi Sojiwan     | Budaya Dan Sejarah | 4.5    | 5000  | candi sojiwan memiliki keunikan keunikan ini b... | 0.309321         |
+   | Candi Plaosan     | Budaya Dan Sejarah | 4.6    | 3000  | candi plaosan terletak di desa bugisan kecamat... | 0.285919         |
+   | Candi Plaosan Lor | Budaya Dan Sejarah | 4.2    | 3000  | kompleks candi buddha yang megah dengan arsite... | 0.282975         |
+   | Candi Ijo         | Budaya Dan Sejarah | 4.7    | 10000 | candi ijo adalah sebuah kompleks percandian be... | 0.277596         |
+   | Perwara Temple    | Budaya Dan Sejarah | 4.4    | 50000 | candi candi pendamping di kompleks prambanan y... | 0.260930         |
+   | Candi Abang       | Budaya Dan Sejarah | 4.2    | 5000  | candi abang memiliki bentuk seperti piramida d... | 0.240907         |
 
 
 <br>
@@ -209,23 +209,18 @@ Output model adalah prediksi rating yang diharapkan oleh user terhadap tempat wi
 - Tampilkan top-N rekomendasi berdasarkan prediksi rating tertinggi `recommend_top_n(user_id=1, n=10)`.
 
 #### 4. Berikut Output: Top-10 Wisata Jogja
-| name                                          | type               | rating | htm    | description                                       |
-| --------------------------------------------- | ------------------ | ------ | ------ | ------------------------------------------------- |
-| The Palace of Yogyakarta (Keraton Yogyakarta) | Budaya Dan Sejarah | 4.6    | 8000   | kompleks keraton merupakan museum yang menyimp... |
-| Gua Jepang                                    | Alam               | 4.1    | 10000  | gua peninggalan tentara jepang di masa perang ... |
-| Bangsal Magangan                              | Budaya Dan Sejarah | 4.7    | 10000  | bangunan bersejarah yang dahulu menjadi bagian... |
-| Museum Wayang Kekayon                         | Budaya Dan Sejarah | 4.2    | 20000  | museum wayang kekayon ini didirikan oleh almar... |
-| Kaliadem                                      | Alam               | 4.5    | 3000   | bunker kaliadaem merupakan tempat untuk berlin... |
-| Jogja Bay                                     | Wisata Air         | 4.4    | 100000 | jogja bay waterpark jbw salah satu waterpark t... |
-| Bukit white stone                             | Alam               | 5.0    | 15000  | bukit dengan formasi batu kapur putih yang uni... |
-| Tourism Village Mlangi                        | Agrowisata         | 4.7    | 5000   | desa religius yang terkenal dengan pondok pesa... |
-| Pantai Segoro Kidul                           | Pantai             | 4.3    | 50000  | pantai penuh legenda yang diyakini sebagai ger... |
-| Vegetalika Faperta UGM                        | Pendidikan         | 4.3    | 0      | kebun edukatif milik fakultas pertanian ugm ya... |
-
-
-
-**Hasil Evaluasi**:
-
+| Name                                              | Type               | Rating | HTM    | Description                                       |
+| ------------------------------------------------- | ------------------ | ------ | ------ | ------------------------------------------------- |
+| Candi Sumberwatu                                  | Budaya Dan Sejarah | 3.3    | 0      | Situs candi kecil yang menawarkan panorama ala... |
+| The Palace of Yogyakarta (Keraton Yogyakarta)     | Budaya Dan Sejarah | 4.6    | 8000   | Kompleks keraton merupakan museum yang menyimp... |
+| Taman Lampion Candi Plaosan                       | Budaya Dan Sejarah | 4.4    | 5000   | Taman indah yang dipenuhi lampion warna warni...  |
+| Bukit white stone                                 | Alam               | 5.0    | 15000  | Bukit dengan formasi batu kapur putih yang uni... |
+| Goa Branjang                                      | Alam               | 4.1    | 5000   | Gua alami yang eksotis dengan suasana hening c... |
+| Tourism Village Pandeyan                          | Agrowisata         | 4.6    | 0      | Desa wisata di Yogyakarta yang menampilkan kek... |
+| TemenNyantai TransWisata                          | Agrowisata         | 4.6    | 5000   | Layanan wisata santai dengan berbagai paket me... |
+| Guide Francophone et Chauffeur de Voiture Priv... | Budaya Dan Sejarah | 5.0    | 11500  | Layanan pemandu wisata dan sopir pribadi berba... |
+| Gardu Pandang Merapi                              | Alam               | 4.3    | 5000   | Tempat terbaik untuk menikmati pemandangan gun... |
+| Lava Tour Merapi                                  | Alam               | 4.8    | 350000 | Wisata jeep menyusuri jalur bekas letusan mera... |
 
 ### Kelebihan & Kekurangan
 
@@ -234,29 +229,68 @@ Output model adalah prediksi rating yang diharapkan oleh user terhadap tempat wi
 | Content-Based Filtering | Tidak butuh data user, cocok untuk user baru.    | Terbatas pada item yang mirip secara deskripsi.     |
 | Collaborative Filtering | Lebih personalisasi & akurat.                    | Butuh data interaksi yang cukup, tidak cocok untuk *cold-start*. |
 
-## 6. Evaluation
+<br>
+
+## **6. Evaluation**
 
 ### Metrik Evaluasi
-- **Mean Absolute Error (MAE)** digunakan untuk mengukur kinerja prediksi rating.
-- Formula:
+1. **Model Content-Based Filtering:** Menggunakan Matrik evaluasi berikut:<br>
+
+- **Formula Precision@K**
+
+$$
+\text{Precision@K} = \frac{\left|\text{Rel}_K\right|}{K}
+$$
+   
+- **Formula Recall@K**
+
+$$
+\text{Recall@K} = \frac{\left|\text{Rel}_K\right|}{\left|\text{Rel}\right|}
+$$
+   
+- **Formula NDCG@K**
+
+$$
+\text{NDCG@K} = \frac{DCG@K}{IDCG@K}
+$$  
+$$
+DCG@K = \sum_{i=1}^K \frac{rel_i}{\log_2(i + 1)}
+$$
+
+<br><br> 
+
+2. **Model Collaborative Filtering:** Menggunakan Mean Absolute Error (MAE) untuk mengukur kinerja prediksi rating.
+   - **Formula:**
 
 $$
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
 $$
 
+
 ### Hasil Evaluasi
-1. Model Content-Based Filtering
-   - **Precision@5 = 0.7483**: sekitar 74.83% merupakan tempat wisata yang relevan dengan query.
-   - **Recall@5 = 0.7839**: berhasil merekomendasikan sekitar 78.39% dari seluruh tempat wisata yang relevan.
-   - **NDCG@5 = 0.9991**: Nilai sangat tinggi menunjukkan bahwa sistem tidak hanya merekomendasikan tempat yang relevan, tetapi juga menempatkannya dalam urutan yang sangat baik sesuai relevansi.
+1. Model Content-Based Filtering <br>
+   Evaluasi dilakukan menggunakan metrik **Precision@K**, **Recall@K**, dan **NDCG@K** untuk mengukur kualitas rekomendasi berdasarkan kemiripan deskripsi tempat wisata yang dihitung dengan metode **TF-IDF dan cosine similarity**.
+      - **Precision@K** mengukur proporsi rekomendasi yang relevan dalam top-K hasil rekomendasi.
+      - **Recall@K** mengukur proporsi item relevan yang berhasil direkomendasikan dalam top-K.
+      - **NDCG@K (Normalized Discounted Cumulative Gain)** mengevaluasi kualitas ranking rekomendasi dengan mempertimbangkan posisi dan relevansi item.
+ relevansi. <br>
+
+   Nilai Evaluasi:
+      
+      | Metrik          | Nilai    |
+      |-----------------|----------|
+      | Precision@5     | 0.7483   |
+      | Recall@5        | 0.7839   |
+      | NDCG@5          | 0.9991   |
   
-##### Visualisasi CBF
+      Visualisasi CBF: <br>
+      ![Visualisasi CBF](asset/visualisasi-cbf.png)
+<br>
 
+1. Model Collaborative Filtering mencapai MAE **1.2710**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
 
-2. Model Collaborative Filtering mencapai MAE **1.2559**, menunjukkan akurasi prediksi rating yang cukup baik untuk data rating 1–5.
-
-##### Visualisasi CF
-![Visualisasi Training](asset/visualisasi-training.png)
+      Visualisasi CF:
+      ![Visualisasi CF](asset/visualisasi-training.png)
 
 
 ## 7. Kesimpulan
